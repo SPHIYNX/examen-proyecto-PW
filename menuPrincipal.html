@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>menu</title>
+	
+	<style type="text/css">
+		P{ background-color: #094095; color: white;}
+           
+		article > p {; color: darkcyan; font-size: 39px; text-align: center;}
+		article > p {margin-left: 200}
+		section li {font-size: 30px}
+		body { font-family: 'Oxygen', sans-serif; }
+	    th { text-align: left; }
+	    legend { font-size: 20px; color: #FFD500; font-weight: bold; }
+	    label { color: white; }
+	    .label1 { font-size: 40px; }
+
+		#menu ul {
+			list-style: none;
+			padding: 10px;
+			margin: 100px,10px,10px,10px;
+			width:900px;
+		}
+
+		#menu li {
+			list-style: none;
+			padding: 10px;	
+			display: inline; 
+		}
+
+		#menu a {
+			float: left;
+			width: 150px;
+			height: 40px;
+			display: block;
+			text-align: center;
+			text-decoration: none;
+			color: #ffffff;
+			font-weight: bold;
+			padding-top: 0px;
+			font-size: 30px;
+		}
+
+		.style-menu { align-content: center; color: white;}
+	</style>
+	<link href="./menuPrincipal_files/css2" rel="stylesheet">
+    <link href="./menuPrincipal_files/css2(1)" rel="stylesheet">
+</head>
+
+<body bgcolor="skyblue" text="black" leftmargin="100" topmargin="100" rightmargin="100" bottommargin="99">
+<header> 
+<img src="images/title1.png" width="100%"> 
+<p align="center"> <font size="7"> <i><b><u>Registro</u></b></i> </font></p>
+</header>
+<main> 
+<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+	<article class="style-menu">
+		<p align="center">Opciones</p>
+	</article>
+	<div class="style-menu" id="menu">
+        <ul>
+	        <li class="menuitem"><a href="file:///C:/Users/leona/OneDrive/Documentos/Univalle/Segundo%20semestre/Progamacion%20Web/EXAMEN2doP/menuPrincipal.html#">Agregar</a></li>
+	        <li class="menuitem"><a href="file:///C:/Users/leona/OneDrive/Documentos/Univalle/Segundo%20semestre/Progamacion%20Web/EXAMEN2doP/menuPrincipal.html#">Eliminar</a></li>
+	        <li class="menuitem"><a href="file:///C:/Users/leona/OneDrive/Documentos/Univalle/Segundo%20semestre/Progamacion%20Web/EXAMEN2doP/menuPrincipal.html#">Modificar</a></li>
+	        <li class="menuitem"><a href="file:///C:/Users/leona/OneDrive/Documentos/Univalle/Segundo%20semestre/Progamacion%20Web/EXAMEN2doP/menuPrincipal.html#">Buscar</a></li>
+        </ul>
+    </div>
+
+</div>
+	<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+        <hr width="100%" color="#000000" size="4">
+	    <main>
+			<form id="frmEjemplo" name="frmEjemplo" method="get" action="https://httpbin.org/get">
+			<fieldset>
+				<legend>Datos personales</legend>
+				<table cellpadding="2" cellspacing="10">
+					<tbody><tr>
+						<th><label for="" txtnombre="">Nombre</label></th>
+						<td><input type="text" id="txtNombre" name="txtNombre" placeholder="Ej: Karen"></td>
+					</tr>
+					<tr>
+						<th><label for="" txtapellido="">Apellido</label></th>
+						<td><input type="text" id="txtApellido" name="txtApellido" placeholder="Ej: Apellido"></td>
+					</tr>
+					<tr>
+						<th><label for="" txttelefono="">Telefono</label></th>
+				        <td><input type="tel" id="txtTelefono" name="txtTelefono" placeholder="Ej: (+591)-XXX-XXX"></td>
+					</tr>
+					<tr>
+						<th><label for="" txtcorreo="">Correo Electrónico</label></th>
+				        <td><input type="email" id="txtCorreo" name="txtCorreo" placeholder="Ej: nombre@dominio.com"></td>
+					</tr>
+
+					<tr>
+						<th><label for="" txtpagweb="">Página Web</label></th>
+				        <td><input type="url" id="txtPagWeb" name="txtPagWeb" placeholder="Ej: https://www.univalle.edu/"></td>
+					</tr>
+
+					<tr>
+						<th><label for="" txtedad="">Edad</label></th>
+				        <td><input type="number" id="txtEdad" min="17" max="25" value="17" name="txtEdad" placeholder="Ej: 22"></td>
+					</tr>
+
+					<tr>
+						<th><label for="" txtfechanac="">Fecha Nacimiento</label></th>
+				        <td><input type="date" min="01-01-1999" max="31-12-2030" id="txtFechaNac" name="txtFechaNac" placeholder="Ej: 15-09-2000"></td>
+					</tr>
+
+					<tr>
+						<th><label for="" txthoranac="">Hora Nacimiento</label></th>
+				        <td><input type="time" min="08:00" max="22:30" id="txtHoraNac" name="txtHoraNac" placeholder="Ej: 7:07"></td>
+					</tr>
+
+					<tr>
+						<th><label for="" txtproyectosfut="">Proyectos Futuros</label></th>
+				        <td><textarea cols="190" rows="10" spellcheck="true"></textarea></td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td colspan="190" align="center"><label class="label1" for="btnEnviar">Enviar</label></td>
+					</tr>
+				</tbody></table>
+				
+			<fieldset>
+				<legend>Datos adicionales</legend>
+				<table cellpadding="2" cellspacing="10">
+					<tbody><tr>
+						<th><label for="" txtdireccion="">Dirección</label></th>
+				        <td><textarea cols="40" spellcheck="true"></textarea></td>
+					</tr>
+
+					<tr>
+						<th><label for="" txtestcivil="">Estado Civil</label></th>
+				        <td><input type="radio" name="Soltero" checked="">Soltero
+				        <input type="radio" name="Soltero" checked="">Casado
+				        <input type="radio" name="Soltero" checked="">Viudo
+				        <input type="radio" name="Soltero" checked="">Divorciado</td>
+					</tr>
+
+					<tr>
+						<th><label for="" txtresidencia="">Ciudad de residencia</label></th>
+				        <td><select name="txtResidencia" id="txtResidencia">
+					       <option value="1">La paz</option>
+					       <option value="2">Oruro</option>
+					       <option value="3">Potosí</option>
+					       <option value="4">Cochabamba</option>
+					       <option value="5">Chuquisaca</option>
+					       <option value="6">Tarija</option>
+					       <option value="7">Santa Cruz</option>
+					       <option value="8">Beni</option>
+					       <option value="9">Pando</option>
+				       </select></td>
+					</tr>
+
+					<tr>
+						
+					</tr>
+				</tbody></table>
+			</fieldset>
+
+			<fieldset>
+				<legend>Datos de instrucción</legend>
+				<table cellpadding="2" cellspacing="10">
+					<tbody><tr>
+						<td><select name="txtInstruccion" id="txtInstruccion" multiple="">
+					      <optgroup label="Bachiller">
+						     <option value="1">Humanidades</option>
+						     <option value="2">Técnico medio</option>
+					      </optgroup>
+					      <optgroup label="Universitario">
+						     <option value="1">Lic/Ing</option>
+						     <option value="2">Maestría</option>
+						     <option value="3">Doctorado</option>
+					      </optgroup>
+				        </select></td>
+					</tr>
+
+					<tr>
+						<th><label for="" txtidioma="">Idioma</label></th>
+				
+				        <td><label for="" txtidioma=""></label></td>
+				        <td><input type="text" name="txtIdioma" list="items"></td>
+					    <td><datalist id="items">
+						   <option value="1">Inglés</option>
+						   <option value="2">Francés</option>
+						   <option value="3">Portugués</option>
+					    </datalist></td>
+					</tr>
+				</tbody></table>
+				
+			</fieldset>
+			<fieldset>
+				<legend>Acerca de ti</legend>
+				<table cellpadding="2" cellspacing="10">
+					<tbody><tr>
+						<th><label for="" txthobbies="">Hobbies</label></th>
+				        <td><input type="checkbox" name="pckColor" checked="">Musica 
+				        <input type="checkbox" name="pckColor" checked="">Baile <br>
+				        <input type="checkbox" name="pckColor" checked="">Lectura 
+				        <input type="checkbox" name="pckColor" value="#010101" checked="">Pasear</td>
+					</tr>
+
+					<tr>
+						<th><label for="" txthobbies="">Color favorito</label></th>
+				        <td><input type="color" name="pckColor" value="#112233"></td>
+					</tr>
+
+					<tr>
+						<th><label for="" txthobbies="">Personaje favorito</label></th>
+				        <th><input type="file" name="fileAdjunto" accept=".jpg, .pdf, .txt, .gif"></th>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td><input type="reset" src="imagen.jpg" width="80" height="30" alt="Enviar"></td>
+					</tr>
+				</tbody></table>
+			</fieldset>
+
+				<input type="submit" value="Enviar Datos get">
+				<input type="submit" value="Enviar Datos post" formmethod="post" formaction="https://httpbin.org/post" formtarget="_blank"><br>
+
+			</fieldset>
+			</form>
+
+			<div style="text-align:center; font-size: 2em; margin: 40px; color: white; font-weight: bold;">Pagina principal</div>
+	    
+	        <div style=" background-color: white;">
+	        	<table>
+	        		<tbody><tr>
+	        			<td></td>
+	        		</tr>
+	        	</tbody></table>
+	          <center><img src="images/icons8-casa.gif" width="100" height="100" alt="No se puede cargar la imagen"></center>
+	        </div>
+
+	        <hr width="100%" color="#000000" size="4">
+
+	        <footer> <h3 align="center">Realizado por: Karen Roman, Josias Perales - UNIVALLE<br>
+	            Fecha: 25/05/2023</h3>
+	        </footer>
+
+		</main>
+	</div>
+
+</main></body></html>
